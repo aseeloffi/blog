@@ -3,7 +3,7 @@ title: Free VPN with Private DNS over WireGuard (Proton VPN & IPv64.net)
 description: >-
   Two free ways to run a WireGuard VPN with a private DNS resolver instead of
   your ISP's — Proton VPN's free tier, and a self-managed setup on IPv64.net.
-date: 2026-08-08 20:00:00 +0000
+date: 2026-08-07 20:00:00 +0000
 categories: [Networking, Tutorial]
 tags: [wireguard, vpn, dns, privacy, self-hosting]
 ---
