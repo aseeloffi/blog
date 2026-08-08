@@ -4,7 +4,7 @@ description: >-
 Force a rooted Android phone’s USB port into host mode, bind an iPhone into
 usbmux, and run a full Debian environment against it via Termux and
 proot-distro — no computer required.
-date: 2026-08-08 12:00:00 +0000
+date: 2026-07-20 12:00:00 +0000
 categories: [Self-Hosting, Tutorial]
 tags: [android, linux, usb, ios, termux]
 ---
