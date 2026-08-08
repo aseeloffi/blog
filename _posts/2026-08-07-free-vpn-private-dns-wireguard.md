@@ -44,27 +44,32 @@ Pick one:
 
 Give the tunnel a name and save it.
 
-## Step 4: Set NextDNS as the DNS
+## Step 4: Get Your NextDNS Addresses
+
+1. Sign up / log in at `my.nextdns.io`{: .filepath }.
+2. Open your profile, go to the **Setup** tab.
+3. Under **Linked IP**, you'll see two IPv6 addresses assigned to your profile — something like:
+   ```
+   2a07:a8c0::XXXX:XXXX
+   2a07:a8c1::XXXX:XXXX
+   ```
+   These are yours, tied to your NextDNS profile — don't use someone else's, or you won't get your own blocklists/logs.
+
+## Step 5: Set NextDNS as the DNS
 
 Once the tunnel is imported:
 
 ### iPhone
 1. Tap the tunnel to open it, then tap **Edit** (top right).
-2. Under **Interface**, tap **DNS servers**, clear the field, and paste:
-   ```
-   2a07:a8c0::73:72, 2a07:a8c1::73:72
-   ```
+2. Under **Interface**, tap **DNS servers**, clear the field, and paste your two addresses from Step 4, separated by a comma.
 3. Tap **Save**.
 
 ### Android
 1. Tap the tunnel, then tap the pencil/edit icon.
-2. Find the **DNS servers** field under the interface section, clear it, and paste:
-   ```
-   2a07:a8c0::73:72, 2a07:a8c1::73:72
-   ```
+2. Find the **DNS servers** field under the interface section, clear it, and paste your two addresses from Step 4, separated by a comma.
 3. Save.
 
-## Step 5: Connect and Check
+## Step 6: Connect and Check
 
 Turn the tunnel on with the toggle next to its name.
 
