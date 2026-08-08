@@ -4,7 +4,7 @@ description: >-
   Deploy AIOStreams behind a WireGuard VPN using Docker Compose and gluetun,
   including environment configuration, port forwarding, and troubleshooting notes.
 date: 2026-07-14 22:23:00 +0000
-categories: [Self-Hosting, Tutorial]
+categories: [Self-Hosting, Setup Guide]
 tags: [docker, wireguard, vpn, self-hosting]
 ---
 
