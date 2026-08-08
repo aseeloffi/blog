@@ -4,7 +4,7 @@ description: >-
   A practical walkthrough for pushing a brand-new local project to GitHub,
   and for pulling and pushing changes to a repo you already cloned.
 date: 2026-07-07 22:15:00 +0000
-categories: [Development, Tutorial]
+categories: [Development, Dev Guide]
 tags: [git, github]
 pin: true
 ---
