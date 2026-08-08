@@ -1,0 +1,245 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* ==========================================================================
+   Aseel — Purple Dark Theme Override
+   Palette derived from portfolio: #6a5acd (primary), #9370db (light),
+   #483d8b (dark), #121212 / #0a0a0a (backgrounds), Poppins font
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --aseel-primary: #6a5acd;
+  --aseel-primary-light: #9370db;
+  --aseel-primary-dark: #483d8b;
+  --aseel-hover: #7b68ee;
+}
+
+:root {
+  &[data-bs-theme='dark'],
+  &:not([data-bs-theme='light']) {
+    /* Framework color */
+    --main-bg: #121212;
+    --mask-bg: rgb(68 69 70);
+    --main-border-color: #292929;
+    --btn-paginator-hover-color: #2e2e2e;
+    --tb-odd-bg: #1e1e1e;
+    --tb-even-bg: #181818;
+    --tb-border-color: var(--tb-odd-bg);
+    --menu-bg: #1e1e1e;
+    --menu-border-color: rgba(106, 90, 205, 0.25);
+    --menu-active-color: var(--aseel-primary-light);
+    --menu-highlight-bg: rgba(106, 90, 205, 0.12);
+
+    /* Common color */
+    --text-color: #f0f0f0;
+    --text-muted-color: #aaaaaa;
+    --text-muted-highlight-color: #cfcfcf;
+    --heading-color: #f0f0f0;
+    --label-color: #b8aefc;
+    --link-color: var(--aseel-primary-light);
+    --link-underline-color: var(--aseel-primary-dark);
+    --button-bg: #1e1e1e;
+    --btn-border-color: #333333;
+    --card-header-bg: #252525;
+    --checkbox-checked-color: var(--aseel-primary-light);
+
+    /* Sidebar */
+    --site-title-color: #f0f0f0;
+    --site-subtitle-color: #aaaaaa;
+
+    --sidebar-bg: var(--card-bg);
+
+ 
+    --sidebar-border-color: #292929;
+    --sidebar-muted-color: #aaaaaa;
+    --sidebar-active-color: var(--aseel-primary-light);
+    --sidebar-hover-bg: rgba(106, 90, 205, 0.12);
+    --sidebar-btn-bg: #1e1e1e;
+    --sidebar-btn-color: var(--aseel-primary-light);
+    --avatar-border-color: var(--aseel-primary);
+
+    /* Topbar */
+    --topbar-bg: rgba(18, 18, 18, 0.8);
+    --search-border-color: #333333;
+    --input-focus-border-color: var(--aseel-primary);
+
+    /* Posts / cards */
+    --toc-highlight: var(--aseel-primary-light);
+    --tag-hover: rgba(106, 90, 205, 0.25);
+    --card-bg: #1e1e1e;
+    --card-hover-bg: #252525;
+    --card-shadow: rgb(10 10 10 / 60%) 0 6px 18px 0, rgb(106 90 205 / 15%) 0 0 0 1px;
+
+    /* Tags / categories */
+    --tag-border: var(--aseel-primary-dark);
+    --categories-hover-bg: rgba(106, 90, 205, 0.15);
+    --categories-icon-hover-color: white;
+
+    /* Code */
+    --highlight-bg-color: #151515;
+    --inline-code-bg: rgba(106, 90, 205, 0.12);
+  }
+
+  :root {
+  &[data-bs-theme='light'] {
+    /* Framework color */
+    --main-bg: #f7f5fc;
+    --mask-bg: #c1c3c5;
+    --main-border-color: #e8e3f7;
+    --btn-paginator-hover-color: var(--sidebar-bg);
+    --tb-odd-bg: #fbfaff;
+    --tb-even-bg: #f2effa;
+    --tb-border-color: #e8e3f7;
+    --menu-bg: white;
+    --menu-border-color: rgba(106, 90, 205, 0.18);
+    --menu-active-color: var(--aseel-primary);
+    --menu-highlight-bg: rgba(106, 90, 205, 0.08);
+
+    /* Common color */
+    --text-color: #34343c;
+    --text-muted-color: #757575;
+    --text-muted-highlight-color: inherit;
+    --heading-color: #241f33;
+    --label-color: #585858;
+    --link-color: var(--aseel-primary-dark);
+    --link-underline-color: rgba(106, 90, 205, 0.35);
+    --button-bg: #ffffff;
+    --btn-border-color: #e9e4f7;
+    --card-header-bg: #f0edfa;
+    --checkbox-checked-color: var(--aseel-primary);
+
+    /* Sidebar */
+    --site-title-color: #2b2438;
+    --site-subtitle-color: #6a6275;
+    --sidebar-bg: var(--card-bg);
+
+    --sidebar-border-color: #ece7f7;
+    --sidebar-muted-color: #6a6275;
+    --sidebar-active-color: var(--aseel-primary);
+    --sidebar-hover-bg: rgba(106, 90, 205, 0.08);
+    --sidebar-btn-bg: #ffffff;
+    --sidebar-btn-color: var(--aseel-primary);
+    --avatar-border-color: var(--aseel-primary);
+
+    /* Topbar */
+    --topbar-bg: rgba(255, 255, 255, 0.75);
+    --search-border-color: #e9e4f7;
+    --input-focus-border-color: var(--aseel-primary);
+
+    /* Posts / cards */
+    --toc-highlight: var(--aseel-primary-dark);
+    --tag-hover: rgba(106, 90, 205, 0.15);
+    --card-bg: #ffffff;
+    --card-hover-bg: #f2effa;
+    --card-shadow: rgb(104 104 104 / 5%) 0 2px 6px 0, rgb(106 90 205 / 12%) 0 0 0 1px;
+
+    /* Tags / categories */
+    --tag-border: rgba(106, 90, 205, 0.3);
+    --categories-hover-bg: rgba(106, 90, 205, 0.1);
+    --categories-icon-hover-color: var(--aseel-primary-dark);
+
+    /* Code */
+    --highlight-bg-color: #f6f8fa;
+    --inline-code-bg: rgba(106, 90, 205, 0.08);
+  }
+}
+
+
+
+  
+}
+
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Site title / brand accent */
+#topbar-title,
+.site-title {
+  color: var(--aseel-primary-light);
+}
+
+
+/* Avatar glow, matches portfolio hover effect */
+#avatar img {
+  box-shadow: 0 0 0 6px rgba(106, 90, 205, 0.2);
+  transition: all 0.4s ease;
+}
+
+#avatar:hover img {
+  box-shadow: 0 0 30px rgba(106, 90, 205, 0.4);
+}
+
+/* Buttons */
+.btn,
+#search-hints .search-tag,
+.post-tag {
+  transition: all 0.3s ease;
+}
+
+a {
+  transition: color 0.25s ease;
+}
+
+/* Pagination / active nav accents */
+.nav-link.active,
+#sidebar .nav-link.active {
+  color: var(--aseel-primary-light) !important;
+}
+
+/* Blockquote accent */
+blockquote {
+  border-left-color: var(--aseel-primary) !important;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(106, 90, 205, 0.35);
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   Animated particles background (matches aseel.space portfolio)
+   ========================================================================== */
+
+.particles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Dim the particles background on post pages only, so article text
+   stays readable without covering the content in a separate panel. */
+body.layout-post .particles-container {
+  opacity: 0.15;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: auto;
+}
+
