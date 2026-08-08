@@ -5,7 +5,7 @@ description: >-
   usbmux, and run a full Debian environment against it via Termux and
   proot-distro — no computer required.
 date: 2026-07-20 12:00:00 +0000
-categories: [Mobile, Tutorial]
+categories: [Mobile, Mobile Guide]
 tags: [android, linux, usb, ios, termux]
 ---
 
