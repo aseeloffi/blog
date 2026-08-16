@@ -2,7 +2,7 @@
 title: Nuvio Addons I Use
 description: How to install addons in Nuvio with ready-to-copy manifest links.
 author: aseel
-date: 2025-01-01 12:00:00 +0300
+date: 2026-08-16 20:00:00 +0300
 categories: [Nuvio, Streaming]
 tags: [nuvio, stremio, addons, streaming]
 ---
@@ -65,6 +65,4 @@ https://nova-streamz.vercel.app/manifest.json
 
 ---
 
-## Note
 
-Some links above contain personal session tokens, meaning they're tied to a specific account and may expire. If a link stops working, visit the addon's configuration page and generate your own manifest URL.
