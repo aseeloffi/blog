@@ -18,10 +18,11 @@ When you first open the app you'll see a black screen saying "No active addons" 
 ## How to Install an Addon
 
 1. Open Nuvio
-2. Go to **Settings → Content & Discovery → Addons** recommended to **delete** all default addons 
-3. Tap **Add Addon**
-4. Paste the `manifest.json` URL into the field
-5. Tap **Install**
+2. Go to **Settings → Content & Discovery → Addons**
+3. Recommended **delete** all default addons 
+4. Tap **Add Addon**
+5. Paste the `manifest.json` URL into the field
+6. Tap **Install**
 
 ---
 
