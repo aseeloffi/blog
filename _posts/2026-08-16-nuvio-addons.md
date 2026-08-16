@@ -1,5 +1,5 @@
 ---
-title: Nuvio Addons I Use
+title: Nuvio Addons
 description: How to install addons in Nuvio with ready-to-copy manifest links.
 author: aseel
 date: 2026-08-16 20:00:00 +0300
@@ -7,7 +7,7 @@ categories: [Nuvio, Streaming]
 tags: [nuvio, stremio, addons, streaming]
 ---
 
-[Nuvio](https://github.com/tapframe/NuvioStreamer) is an open-source media player built with Kotlin Multiplatform, available on Android, iOS, and Android TV. It runs on the same addon ecosystem as Stremio — any Stremio-compatible addon works in Nuvio.
+Nuvio is an open-source media player built with Kotlin Multiplatform, available on Android, iOS, and Android TV. It runs on the same addon ecosystem as Stremio — any Stremio-compatible addon works in Nuvio.
 
 When you first open the app you'll see a black screen saying "No active addons" — that's expected. The app ships empty and needs addons to load any content.
 
