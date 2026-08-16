@@ -1,7 +1,7 @@
 ---
 title: Nuvio Addons
 description: How to install addons in Nuvio with ready-to-copy manifest links.
-author: aseel
+author: cotes
 date: 2026-08-16 20:00:00 +0300
 categories: [Nuvio, Streaming]
 tags: [nuvio, stremio, addons, streaming]
